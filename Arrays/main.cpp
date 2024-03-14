@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 using namespace std;
 
@@ -18,13 +18,13 @@ void main()
 
 #ifdef ARR_0
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå " << i << " ýëåìåíò ìàññèâà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 		cin >> arr[i];
 		cout << endl;
 	}
 	cout << endl;
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ýëåìåíò ìàññèâà " << i << " = " << arr[i] << "\n\n";
+		cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð° " << i << " = " << arr[i] << "\n\n";
 	}
 #endif // ARR_0
 
@@ -43,7 +43,7 @@ void main()
 #ifdef ARR_3
 	int sum = 0;
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå " << i << " ýëåìåíò ìàññèâà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 		cin >> arr[i];
 		cout << endl;
 	}
@@ -56,7 +56,7 @@ void main()
 #ifdef ARR_4
 	int sum = 0;
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå " << i << " ýëåìåíò ìàññèâà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 		cin >> arr[i];
 		cout << endl;
 	}
@@ -69,7 +69,7 @@ void main()
 
 #ifdef ARR_5
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå " << i << " ýëåìåíò ìàññèâà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 		cin >> arr[i];
 		cout << endl;
 	}
@@ -84,7 +84,7 @@ void main()
 
 #ifdef ARR_6
 	for (int i = 0; i < SIZE; i++) {
-		cout << "Ââåäèòå " << i << " ýëåìåíò ìàññèâà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 		cin >> arr[i];
 		cout << endl;
 	}
