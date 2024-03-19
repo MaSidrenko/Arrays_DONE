@@ -2,102 +2,59 @@
 
 using namespace std;
 
-//#define ARR_0
-//#define ARR_1
-//#define ARR_2
-//#define ARR_3
-//#define ARR_4
-//#define ARR_5
-#define ARR_6
+#define tab "\t"
 
-void main() 
-{
+void main() {
 	setlocale(LC_ALL, "");
 	const int SIZE = 5;
 	int arr[SIZE];
 
-#ifdef ARR_0
-	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите " << i << " элемент массива: ";
+	//Ввод элементов массива с клавиатуры
+	cout << "Введите элементы массива: ";
+		for (int i = 0; i < SIZE; i++) 
+		{
 		cin >> arr[i];
-		cout << endl;
-	}
+		}
 	cout << endl;
-	for (int i = 0; i < SIZE; i++) {
+
+		for (int i = 0; i < SIZE; i++) {
 		cout << "Элемент массива " << i << " = " << arr[i] << "\n\n";
 	}
-#endif // ARR_0
 
-#ifdef ARR_1
-	for (int i = 0; i < SIZE; i++) {
-		cout << arr[i] << "\t";
+	//Вывод элементов массива в прямом порядке
+	cout << "Вывод элементов массива в прямом порядке: ";
+		for (int i = 0; i < SIZE; i++) {
+		cout << arr[i] << tab;
 	}
-#endif // ARR_1
+	cout << "\n\n";
 
-#ifdef ARR_2
-	for (int i = SIZE; i >= 0; i--) {
-		cout << arr[i] << "\t";
+	//Вывод элементов массива в обратном порядке
+	cout << "Вывод элементов массива в обратном порядке: ";
+		for (int i = SIZE - 1; i >= 0; i--) {
+		cout << arr[i] << tab;
 	}
-#endif // ARR_2
+	cout << "\n\n";
 
-#ifdef ARR_3
+	//Сумма элементов элементов массива и Среднее-арифметическое элементов массива
 	int sum = 0;
-	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите " << i << " элемент массива: ";
-		cin >> arr[i];
-		cout << endl;
-	}
-	for (int i = 0; i < SIZE; i++) {
+		for (int i = 0; i < SIZE; i++) {
 		sum += arr[i];
 	}
-	cout << sum;
-#endif // ARR_3
+	cout << "Сумма элементов массива: " << sum << "\n\n";
+	cout << "Среднее-арифметическое: " << (double)sum / SIZE << "\n\n";
 
-#ifdef ARR_4
-	int sum = 0;
-	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите " << i << " элемент массива: ";
-		cin >> arr[i];
-		cout << endl;
-	}
-	for (int i = 0; i < SIZE; i++) {
-		sum += arr[i];
-	}
-	int Arfm = sum / SIZE;
-	cout << Arfm;
-#endif // ARR_4
-
-#ifdef ARR_5
-	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите " << i << " элемент массива: ";
-		cin >> arr[i];
-		cout << endl;
-	}
+	//Максимальное и минимальное значение элемента массива
 	int max = arr[0];
-	for (int i = 0; i < SIZE; i++) {
-		if (arr[i] < max) {
-			max = arr[i];
-		}
-	}
-	cout << max;
-#endif // ARR_5
-
-#ifdef ARR_6
-	for (int i = 0; i < SIZE; i++) {
-		cout << "Введите " << i << " элемент массива: ";
-		cin >> arr[i];
-		cout << endl;
-	}
 	int min = arr[0];
-	for (int i = 0; i < SIZE; i++) {
-		if (arr[i] < min) {
-			min = arr[i];
+		for (int i = 0; i < SIZE; i++) {
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+			if (arr[i] < min) {
+				min = arr[i];
+			}
 		}
-	}
-	cout << min;
-#endif // ARR_6
+	cout << "Максимальное значение элемента массива: " << max << "\n\n";
+	cout << "Минимальное значение жлемента массива: " << min;
 
-	
-	
 }
-
