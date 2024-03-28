@@ -23,7 +23,7 @@ void main()
 	//	binary[i] = decimal % 2;	//Записываем младший разряд числа в массив
 	//	decimal /= 2;				//Убираем младший довоичный разряд из десятичного числа
 	//}
-	for (; decimal; decimal /= 2)binary[i++] = decimal % 2;
+	for (; decimal; decimal /= 2)binary[i++] = decimal % 2;)
 
 	// Для получениея конечного результата нужно переписать остатки от деления в обратном порядке,
 	// Начиная с последнего результата от деления: 
@@ -44,14 +44,18 @@ void main()
 	const int MAX_HEX_CAPACITY = 8;
 	char hex[MAX_HEX_CAPACITY] = {};
 	int i = 0;
-	for (; decimal; i++) 
-	{
-		hex[i] = decimal % 16;
+		for (; decimal; i++) 
+		{
+	    hex[i] = decimal % 16;
+		hex[i] += hex[i] < 10 ? 48 : 55;
 		decimal /= 16;
-	}
+		}
+	//for (; decimal;hex[i++] = decimal % 16, decimal /=16) 
 
 	for (--i; i >= 0; i--) {
-		cout << (char)(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);
+		cout << hex[i];
+		//cout << (char)(hex[i] < 10 ? hex[i] + '0' : hex[i] + 'A' - 10);
+		//cout << (char)(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);
 		/*if (hex[i] < 10)
 			cout << (int)hex[i];
 		else
