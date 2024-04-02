@@ -11,20 +11,17 @@ void main() {
 	const int SIZE = 5;
 	int arr[SIZE];
 	int minRand, maxRand;
-	cout << "Введите минимальное случайное число: "; cin >> minRand;
-	cout << "Ввдеите максимальное случайное число: "; cin >> maxRand;
-	
-	if (maxRand == minRand) {
-		cout << "Error 0: minRand != maxRand";
-		return;
-	}
-	else if (minRand > maxRand) {
-		cout << "Error 1: vaule minRand can`t be batter than maxRand";
-		return;
-	}
+	do {
+		system("CLS");
+		cout << "Введите минимальное случайное число: "; cin >> minRand;
+		cout << "Ввдеите максимальное случайное число: "; cin >> maxRand;
+		if (maxRand <= minRand) {
+			std::cerr << "Error 0: incorrect vaule`s" << endl;
+			system("PAUSE");
+		}
+	} while (minRand >= maxRand);
 
 	//Запонения массива случайными числами: 
-
 	for (int i = 0; i < SIZE; i++) {
 		arr[i] = rand() % (maxRand  - minRand) + minRand;
 	}
