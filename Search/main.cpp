@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 using std::cout;
 using std::cin;
@@ -13,7 +13,7 @@ void main()
 	const int SIZE = 10;
 	int arr[SIZE];
 	int numbers_of_repeat = 0;
-	cout << "Ïîâòîðÿþùèåñÿ çíà÷åíèÿ: ";
+	cout << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€ÑÑŽÑ‰Ð¸ÐµÑÑ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ: ";
 	for (int i =0; i <SIZE; i++) 
 	{
 		bool unique;
@@ -32,7 +32,7 @@ void main()
 		} while (!unique);
 	}
 	cout << endl;
-	cout << "Êîëè÷åñòâî ïîâòîðåíèé: " << numbers_of_repeat;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð¸Ð¹: " << numbers_of_repeat;
 	cout << endl;
 	for (int i = 0; i < SIZE; i++)
 	{
